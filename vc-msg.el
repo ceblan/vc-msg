@@ -267,6 +267,7 @@ and is a blackbox to 'vc-msg.el'."
 (defvar vc-msg-map
   (let ((map (make-sparse-keymap)))
     ;; key bindings
+    (define-key map (kbd "<escape>") 'vc-msg-close)
     (define-key map (kbd "q") 'vc-msg-close)
     (define-key map (kbd "w") 'vc-msg-copy-all)
     map)
